@@ -42,6 +42,7 @@ class HistoryService {
     const citiesArray = await this.getCities();
 
     // First use citiesArray.find() to check if there is already a city object matching the city name
+    
     // If there is, return without continuing the rest of the code below
 
     
@@ -52,7 +53,7 @@ class HistoryService {
     // Use this.write to overwrite the searchHistory.json file with our new array of city objects
   }
 
-  // * BONUS TODO: Define a removeCity method that removes a city from the searchHistory.json file
+  /* BONUS TODO: Define a removeCity method that removes a city from the searchHistory.json file
   async removeCity(id: string) {
     // Get the cities array
     const citiesArray = await this.getCities();
@@ -63,6 +64,7 @@ class HistoryService {
     
     // console.log a confirmation that the city has been removed
   }
+  */
 }
 
 export default new HistoryService();

@@ -26,7 +26,7 @@ const windEl: HTMLParagraphElement = document.getElementById(
 ) as HTMLParagraphElement;
 const humidityEl: HTMLParagraphElement = document.getElementById(
   'humidity'
-) as HTMLParagraphElement;
+) as HTMLParagraphElement; 
 
 /*
 
