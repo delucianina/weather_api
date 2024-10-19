@@ -4,7 +4,8 @@ import express from 'express';
 // Allow us to pull variables from .env file with process.env
 dotenv.config();
 
-// Import the routes
+// Import the routes 
+// I wonder if this will throw an error? Exporting "router" on the index file 
 import routes from './routes/index.js';
 
 

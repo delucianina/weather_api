@@ -8,9 +8,9 @@ class WeatherService {
   apiKey: string;
 
   constructor() {
-    // TODO: Assign the properties baseURL and apiKey using process.env
-    this.baseURL = '';
-    this.apiKey = '';
+    // DONE: Assign the properties baseURL and apiKey using process.env
+    this.baseURL = process.env.API_BASE_URL || '';
+    this.apiKey = process.env.API_KEY || '';
   }
 
   // TODO: Create fetchLocationData method

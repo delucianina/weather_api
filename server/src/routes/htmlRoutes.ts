@@ -1,21 +1,23 @@
 import { Router, Response } from 'express';
 
 // DONE - import path from 'node:path';
-import path from 'path';
+import path from 'node:path';
 
 // DONE - import { fileURLToPath } from 'node:url';
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'node:url';
 
 import { dirname } from 'path';
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
+/*these 2 lines were in the starter code but commented out... 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+*/
 
 
 const router = Router();
 
 
-// TODO: Define route to serve index.html
+// DONE: Define route to serve index.html
 router.get('*', (_, responseObj: Response) => {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
